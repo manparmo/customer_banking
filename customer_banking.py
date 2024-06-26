@@ -9,7 +9,7 @@ def main():
     It displays the interest earned on the savings and CD accounts and updates the balances.
     """
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
-    savings_balance = input(f'Welcome to the customer banking system\n\nPlease enter the customer savings balance: ')
+    savings_balance = input(f'\nWelcome to the customer banking system\n\nPlease enter the customer savings balance: ')
     savings_interest = input(f'Please enter the customer savings interest rage: ')
     savings_maturity = input(f'Please enter how many months has accrued interest: ')
    
@@ -17,11 +17,11 @@ def main():
     updated_savings_balance, interest_earned = create_savings_account(float(savings_balance), float(savings_interest), int(savings_maturity))
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
-    print(f'The interest earned on the acount created during {savings_maturity} months is: {interest_earned}')
-    print(f'The Updated Savings Balance on the acount created is: {updated_savings_balance}')
+    print(f'The interest earned on the acount created during {savings_maturity} months is: ${interest_earned:,.2f}')
+    print(f'The Updated Savings Balance on the acount created is: ${updated_savings_balance:,.2f}')
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
-    cd_balance = input(f'Please enter the customer CD balance: ')
+    cd_balance = input(f'\nNow let\'s Create a CD for the user\nPlease enter the customer CD balance: ')
     cd_interest = input(f'Please enter the customer CD interest rage: ')
     cd_maturity = input(f'Please enter how many months was the balance invested: ')
     
@@ -29,8 +29,9 @@ def main():
     updated_cd_balance, interest_earned = create_cd_account(float(cd_balance), float(cd_interest), int(cd_maturity))
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
-    print(f'The interest earned on the CD created during {cd_maturity} months is: {interest_earned}')
-    print(f'The Updated CD Balance on the acount created is: {updated_cd_balance}')
+    print(f'The interest earned on the CD created during {cd_maturity} months is: ${interest_earned:,.2f}')
+    print(f'The Updated CD Balance on the acount created is: ${updated_cd_balance:,.2f}')
+    print(f'\n\nThank you for using this Central banking system :) print yourself a lot of money!\n')
 
 
 if __name__ == "__main__":
