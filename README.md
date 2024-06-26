@@ -1,6 +1,8 @@
 # customer_banking
 
+Below a sample execution of Week 3 Banking system:
 
+```
 Welcome to the customer banking system
 
 Please enter the customer savings balance: 100 
@@ -18,3 +20,4 @@ The Updated CD Balance on the acount created is: $1,200.00
 
 
 Thank you for using this Central banking system :) print yourself a lot of money!
+```
