@@ -1,6 +1,6 @@
 # customer_banking
 
-Below a sample execution of Week 3 Banking system:
+Below a sample execution of Week 3 Challenge excersise Banking system:
 
 ```
 
